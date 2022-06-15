@@ -1,0 +1,36 @@
+// const cypress = require('cypress')
+
+// npm init
+// installcypress 9.6.1
+// install npx
+
+// use this link for BDD
+
+// https://www.toolsqa.com/cypress/bdd-automation-framework-in-cypress/
+
+// step 1:
+// for BDD configuration:
+// npm install --save-dev cypress-cucumber-preprocessor
+
+
+// step 2:
+// paste: plugins/ index.js
+// const cucumber = require('cypress-cucumber-preprocessor').default
+
+// module.exports = (on, config) => {
+//   on('file:preprocessor', cucumber())
+// }
+
+
+// step 3:
+// paste:cypress.json:
+// {
+//     "testFiles": "**/*.{feature,features}"
+// }
+
+
+// step 4:
+// paste: package.json
+// "cypress-cucumber-preprocessor": {
+//     "nonGlobalStepDefinitions": true
+// }
