@@ -34,3 +34,10 @@
 // "cypress-cucumber-preprocessor": {
 //     "nonGlobalStepDefinitions": true
 // }
+
+gherkin
+Given  // Pre-condition
+When   // Action     //AND
+Then // Assertion
+// feature - 10 
+// @focus
