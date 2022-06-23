@@ -1,10 +1,10 @@
 import { Given, And, When, Then } from "cypress-cucumber-preprocessor/steps"
 import Product from '../../POM/HomePage'
 
-const productLst = new Product()
+let productLst = new Product()
 
 Given('Open E-Commerce Site with POM', () => {
-    productLst.visitUrl( 'https://rahulshettyacademy.com/seleniumPractise/#/')
+    productLst.visitUrl('https://rahulshettyacademy.com/seleniumPractise/#/')
 
 })
 
@@ -24,6 +24,5 @@ When('Place order and select country with POM', () => {
 
 Then('Validate the Thank you message with POM', () => {
     cy.contains("Thank you, your order has been placed successfully You'll be redirected to Home page shortly!!").should('be.visible')
-    cy.log('test5')
 })
 

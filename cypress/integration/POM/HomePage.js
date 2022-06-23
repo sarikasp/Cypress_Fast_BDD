@@ -1,8 +1,12 @@
-let url = 'https://rahulshettyacademy.com/seleniumPractise/#/'
+import CSSSelector from '../POM/Selectors'
+let selector = new CSSSelector()
+
+
+
 class Product {
 
     visitUrl(url) {
-        cy.visit(url)
+        return cy.visit(url)
     }
 
     searchProduct(value) {
@@ -25,13 +29,15 @@ class Product {
         cy.get('select').select('India')
         // cy.get('[class="chkAgree"]').click()
         // cy.get('button').click()
-        this.clickItem('[class="chkAgree"]')
+        // this.clickItem('[class="chkAgree"]')
+
+        this.clickItem(selector.agreeBtn)
         this.clickItem('button')
     }
 
 
     clickItem(element) {
-        cy.get(element).click()
+        return cy.get(element).click()
     }
 
 
@@ -44,12 +50,3 @@ export default Product
 
 
 
-
-// class CSSSelector{
-
-//     agreeBtn = '[class="chkAgree"]'
-// }
-
-
-// let selector = new CSSSelector()
-// productLst.clickItem(selector.agreeBtn)
