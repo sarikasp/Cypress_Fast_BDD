@@ -68,3 +68,4 @@ Then('Users should be updated with {word} and {word}', (name, job) => {
         expect(response.body.job).to.eqls(job)
     })
 })
+

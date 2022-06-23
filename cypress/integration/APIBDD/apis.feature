@@ -17,7 +17,7 @@ Feature: Regres API
         Given User sent the request to update existing user with <name> and <job>
         Then Users should be updated with <name> and <job>
         Examples:
-            | name   | job       |
-            | Shreya | HR        |
+            | name   | job        |
+            | Shreya | HR         |
             | Savi   | IT_Support |
-            | Ovi    | DB        |
+            | Ovi    | DB         |
